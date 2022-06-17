@@ -13,7 +13,7 @@ jobs:
   build:
     uses: klaasjandejager/toy-website-end-to-end/.github/workflows/build.yml@main
 
-  # Lint the Bicep file.
+  # Lint the changed Bicep file.
   lint:
     uses: klaasjandejager/toy-website-end-to-end/.github/workflows/lint.yml@main
 
