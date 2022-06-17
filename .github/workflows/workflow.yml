@@ -32,10 +32,10 @@ jobs:
   # Deploy to the production environment.
   deploy-production:
     uses: klaasjandejager/toy-website-end-to-end/.github/workflows/deploy.yml@main
-      needs:
-      - lint
-      - build
-      - deploy-test
+    needs:
+    - lint
+    - build
+    - deploy-test
     with:
       environmentType: Production
       resourceGroupName: ToyWebsiteProduction
